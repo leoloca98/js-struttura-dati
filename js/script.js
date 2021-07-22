@@ -8,10 +8,15 @@ stampiamo sulla pagina HTML tutte le informazioni
 relative alla carta stessa, senza particolare
 attenzione a dettagli grafici (va bene una lista coi tag UL e LI)
 
+** Carta di ORSO GRIZZLY
+
  */
 
+//*FORM
 cardTemplate = document.getElementById("card-template");
 
+
+//*CREAZIONE DELLA CARTA
 const card = {
     id: 1,
     nameCard: "Grizzly Bears",
@@ -34,7 +39,7 @@ const card = {
     artist: "D. J. Cleland-Hura"
 };
 
-//CONTROLLI PER IL TEMPLATE
+//*CONTROLLI PER IL TEMPLATE
 let subType = card.optionalType ? ` -  ${card.optionalType}` : "";
 let abilitiesMessage = `<i>Nessuna abilità</i>`;
 if (card.abilities.length) {
@@ -47,7 +52,7 @@ if (card.abilities.length) {
     abilitiesMessage += `</ul>`;
 }
 
-//CREAZIONE DEL TEMPLATE
+//*CREAZIONE DEL TEMPLATE
 let cardDisplay = `
 <ul class="card-type">
     <li>Id: ${card.id}</li>
@@ -74,5 +79,5 @@ let cardDisplay = `
     <li>Artist: ${card.artist}</li>    
 </ul>`;
 
-
+//*STAMPARE IN PAGINA
 cardTemplate.innerHTML = cardDisplay;
