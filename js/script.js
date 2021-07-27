@@ -1,5 +1,7 @@
 /**
 
+**PRIMA PARTE (Completato)
+
 Proviamo a ripetere quanto visto in classe,
 creando la struttura che riteniamo più adeguataper
 rappresentare una carta di Magic.
@@ -8,9 +10,22 @@ stampiamo sulla pagina HTML tutte le informazioni
 relative alla carta stessa, senza particolare
 attenzione a dettagli grafici (va bene una lista coi tag UL e LI)
 
-** Carta di ORSO GRIZZLY
+Carta di ORSO GRIZZLY
 
- */
+**SECONDA PARTE
+
+Completiamo il nostro archivio delle carte aggiungendo i seguenti step:
+1- Creiamo un mazzo di carte
+2- Stampiamo tutte  le carte su schermo
+3- Aggiungiamo un piccolo form in HTML
+4- Ragioniamo pian pianino sulla logica dei filtri
+
+Siccome siete stati troppo bravi a creare un oggetto card molto complesso, è molto complicato riuscire a filtrare tutte le proprietà.
+PERTANTO IL MINIMO RICHIESTO E':
+-Filtrare prima le proprietà con valori semplici (stringhe o numeri)
+-Filtrare le proprietà il cui valore è un array di stringhe
+
+*/
 
 //*FORM
 cardTemplate = document.getElementById("card-template");
